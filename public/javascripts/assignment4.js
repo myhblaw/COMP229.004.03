@@ -1,7 +1,8 @@
 /*
-   Author name: Yuk Hong Ma
-   Student ID: 301210312
-   Date: March 19, 2022
+    assignment4.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 4, 2022
 */
 
 function createEventListner() {

@@ -1,3 +1,9 @@
+/* 
+    style.css
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 4, 2022
+*/
 
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
@@ -10,12 +16,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   background-image: url('/images/coding.jpg');
   min-height: 100%;
 }
-
-/* 
-   Author name: Yuk Hong Ma
-   Student ID: 301210312
-   Date: March 19, 2022
-*/
 
 * {
   box-sizing: border-box;

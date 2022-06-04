@@ -1,3 +1,10 @@
+/*
+    index.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 4, 2022
+*/
+
 var express = require('express');
 var router = express.Router();
 
@@ -9,11 +16,6 @@ function home(req, res, next) {
     title: 'Home',
     userName: 'Julio'  });
 }
-
-/* GET About page. */
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About', userName: 'Julio' });
-});
 
 /* GET About Me page. */
 router.get('/aboutme', function(req, res, next) {

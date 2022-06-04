@@ -12,12 +12,27 @@ function home(req, res, next) {
 
 /* GET About page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About', userName: 'Julio' });
+  res.render('about', { title: 'About', userName: 'Julio' });
+});
+
+/* GET About Me page. */
+router.get('/aboutme', function(req, res, next) {
+  res.render('aboutme', { title: 'Aboutme', userName: 'Julio' });
 });
 
 /* GET Projects page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'Projects', userName: 'Julio' });
+  res.render('projects', { title: 'Projects', userName: 'Julio' });
+});
+
+/* GET Services page. */
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services', userName: 'Julio' });
+});
+
+/* GET Contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'contact', userName: 'Julio' });
 });
 
 module.exports = router;

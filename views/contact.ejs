@@ -1,0 +1,135 @@
+<% include partials/header.ejs %>
+  
+<h1  style="background-color:rgb(71, 74, 255);font-family:arial">COMP125003 Client-Side Web Development 2022 Winter Assignment 4</h1>
+<img src="images/centennial.jpg" height="175" width="480">
+<div class="container">
+    <h2>Member Registration</h2>
+    <form action="">
+        <fieldset>
+        <legend>Please complete all the fields below:</legend>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="col-75">
+                <input id="firstName" type="text" placeholder="Enter your first name...">
+                <p id="fnameError" class="error"></p><br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lastName">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input id="lastName" type="text" placeholder="Enter your last name...">
+                <p id="lnameError" class="error"></p><br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="address">Address</label>
+              </div>
+              <div class="col-75">
+                <input id="address" type="text" placeholder="Enter your address...">
+                <p id="addressError" class="error"></p><br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="city">City</label>
+              </div>
+              <div class="col-75">
+                <input id="city" type="text" placeholder="Enter your city...">
+                <p id="cityError" class="error"></p><br>
+              </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                  <label for="postalCode">Postal Code</label>
+                </div>
+                <div class="col-75">
+                    <input id="postalCode" type="text" placeholder="Enter your postal code...">
+                    <p id="postalCodeError" class="error"></p><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                    <label for="province">Province</label>
+                </div>
+                <div class="col-75">
+                    <select id="province" name="province">
+                        <option value="">---Please select a Province---</option>
+                        <option value="quebec">QC</option>
+                        <option value="ontario">ON</option>
+                        <option value="manitoba">MN</option>
+                        <option value="saskatchewan">SK</option>
+                        <option value="alberta">AB</option>
+                        <option value="britishColumbia">BC</option>
+                    </select>
+                    <p id="provinceError" class="error"></p> <br>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                    <label for="age">Age</label>
+                </div>
+                <div class="col-75">
+                    <input id="age" type="number" placeholder="Enter your age...">
+                    <p id="ageError" class="error"></p><br>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                    <label for="password">Password</label>
+                </div>
+                <div class="col-75">
+                    <input id="password" type="password" placeholder="Enter your password...">
+                    <p id="passwordError" class="error"></p><br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                    <label for="confirm">Confirm Password</label>
+                </div>
+                <div class="col-75">
+                    <input id="confirm" type="password" placeholder="Enter your password...">
+                    <p id="confirmError" class="error"></p><br>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                    <label for="mail">Email</label>
+                </div>
+                <div class="col-75">
+                    <input id="mail" type="text" placeholder="Enter your email...">
+                    <p id="mailError" class="error"></p><br>
+                </div>
+              </div>
+            <br>
+        </fieldset>
+    </form>
+
+    <p>
+        <button id="register"
+        type="submit">Register</button>
+    </p>
+    
+    <p>
+        <button id="reset" type="reset">Reset</button>
+    </p>
+
+</div>
+
+<script src="/javascripts/assignment4.js"></script>
+
+<% include partials/footer.ejs %>
